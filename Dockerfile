@@ -1,7 +1,7 @@
 # eks version
 FROM alpine/k8s:1.22.9
 
-LABEL maintainer="Rokhun Jung <j.rokhun@gmail.com>"
+LABEL maintainer="Adam Smith <adams@beautyindustrygroup.com>"
 
 RUN apk add --update \
         coreutils \
