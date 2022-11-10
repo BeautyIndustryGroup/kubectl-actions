@@ -1,6 +1,6 @@
 # Github Action for Kubernetes CLI
 
--  image based on Alpine/k8s.
+-  image based on amazon/aws-cli.
 
 ## Usage
 
