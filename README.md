@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: deploy to cluster
-      uses: BeautyIndustryGroup/kubectl@1.22.9
+      uses: BeautyIndustryGroup/kubectl-actions@master
       env:
         kube_confg_data: ${{ secrets.KUBE_CONFIG_DATA }}
         aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -26,7 +26,7 @@ jobs:
         args: set image --record deployment/my-app container=${{ github.repository
           }}:${{ github.sha }}
     - name: verify deployment
-      uses: BeautyIndustryGroup/kubectl@1.22.9
+      uses: BeautyIndustryGroup/kubectl-actions@master
       env:
         kube_confg_data: ${{ secrets.KUBE_CONFIG_DATA }}
         aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
