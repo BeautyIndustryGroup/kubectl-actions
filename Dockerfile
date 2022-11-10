@@ -1,7 +1,7 @@
 # eks version
 FROM amazon/aws-cli
 
-ARG KUBECTL_VERSION=1.22.6
+ARG KUBECTL_VERSION=1.22.15
 
 LABEL maintainer="Adam Smith <adams@beautyindustrygroup.com>"
 
