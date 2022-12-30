@@ -14,7 +14,7 @@ jobs:
     name: Deploy to cluster
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@3
     - name: deploy to cluster
       uses: BeautyIndustryGroup/kubectl-actions@master
       env:
