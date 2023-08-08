@@ -2,10 +2,11 @@
 FROM amazon/aws-cli
 
 ARG KUBECTL_VERSION=1.24.13
+ARG KUBECTL_BUILD_DATE=2023-05-11
 
 LABEL maintainer="Adam Smith <adams@beautyindustrygroup.com>"
 
-RUN curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/${KUBECTL_VERSION}/2022-03-09/bin/linux/amd64/kubectl && \
+RUN curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/${KUBECTL_VERSION}/${KUBECTL_BUILD_DATE}/bin/linux/amd64/kubectl && \
     mv kubectl /usr/bin/kubectl && \
     chmod +x /usr/bin/kubectl
 # RUN pip install awscli
