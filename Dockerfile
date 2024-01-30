@@ -1,6 +1,6 @@
- eks version
 FROM amazon/aws-cli
 
+#Kubectl Version
 ARG KUBECTL_VERSION=1.29.0
 ARG KUBECTL_BUILD_DATE=2024-01-04
 
