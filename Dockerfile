@@ -1,8 +1,8 @@
 FROM amazon/aws-cli
 
 #Kubectl Version
-ARG KUBECTL_VERSION=1.29.0
-ARG KUBECTL_BUILD_DATE=2024-01-04
+ARG KUBECTL_VERSION=1.31.3
+ARG KUBECTL_BUILD_DATE=2024-12-12
 
 LABEL maintainer="Adam Smith <adams@beautyindustrygroup.com>"
 
